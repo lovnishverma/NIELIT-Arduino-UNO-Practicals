@@ -495,8 +495,5 @@ This project is distributed under the license included in the repository.
 See:
 
 ```text
-LICENSE
+MIT LICENSE
 ```
-
-
-I would, however, add the missing `LICENSE` file before your next release, because that was the only documentation/metadata issue specifically flagged by Arduino Lint.
