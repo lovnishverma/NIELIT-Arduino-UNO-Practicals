@@ -1,75 +1,502 @@
-# NIELIT Arduino UNO Practicals Library
+# NIELIT Arduino UNO Practicals
 
-Version: 1.0.0
+A structured Arduino library containing the **NIELIT Arduino UNO Practical Series (1.2–1.19)**.
 
-This Arduino library packages the NIELIT Arduino UNO practical programs as
-installable Arduino Examples.
+The library provides classroom-ready Arduino UNO practical programs covering GPIO, digital and analog interfacing, PWM, displays, sensors, EEPROM, Bluetooth, relay control, and home automation.
 
-## Installation
+---
 
-1. Open Arduino IDE.
-2. Select **Sketch -> Include Library -> Add .ZIP Library...**
-3. Select `NIELIT_Arduino_UNO_Practicals_Library_v1.0.0.zip`.
-4. Restart Arduino IDE if the Examples menu does not refresh.
+## Features
 
-## Open a practical
+- 18 complete Arduino UNO practical programs
+- Direct access through the Arduino IDE **Examples** menu
+- Designed for classroom and laboratory training
+- Beginner-friendly hardware interfacing programs
+- Digital input/output
+- PWM
+- LCD and keypad interfacing
+- Ultrasonic distance measurement
+- Temperature and humidity sensing
+- EEPROM data storage
+- Relay control
+- Bluetooth communication
+- Home automation
+- Reusable NIELIT library utilities
+
+---
+
+# Installation
+
+## Method 1 — Arduino Library Manager
+
+This is the recommended installation method.
+
+1. Open **Arduino IDE**.
+2. Go to:
+
+   **Tools → Manage Libraries**
+
+3. Search for:
+
+   ```text
+   NIELIT Arduino UNO Practicals
+````
+
+4. Select the library and click **Install**.
+
+After installation, open:
+
+**File → Examples → NIELIT Arduino UNO Practicals**
+
+and select the required practical.
+
+---
+
+## Method 2 — ZIP Installation
+
+You can also install the library manually using the ZIP package.
+
+1. Download the library ZIP.
+
+2. Open Arduino IDE.
+
+3. Go to:
+
+   **Sketch → Include Library → Add .ZIP Library...**
+
+4. Select the ZIP file.
+
+5. Restart Arduino IDE if necessary.
+
+After installation, open:
+
+**File → Examples → NIELIT Arduino UNO Practicals**
+
+---
+
+# Practical List
+
+| Practical | Title                                        |
+| --------- | -------------------------------------------- |
+| **1.2**   | Basic LED Output                             |
+| **1.3**   | LED Array                                    |
+| **1.4**   | LED PWM Fade                                 |
+| **1.5**   | Digital Button Input                         |
+| **1.6**   | Button Controlled LED                        |
+| **1.7**   | Two-Button LED Control                       |
+| **1.8**   | Buzzer                                       |
+| **1.9**   | LED and Buzzer PWM                           |
+| **1.10**  | 16x2 LCD                                     |
+| **1.11**  | 4x4 Keypad                                   |
+| **1.12**  | LCD + Keypad + Buzzer Access Control         |
+| **1.13**  | HC-SR04 Ultrasonic Distance                  |
+| **1.14**  | DHT11 Telemetry                              |
+| **1.15**  | DHT11 + I2C LCD                              |
+| **1.16**  | Internal EEPROM                              |
+| **1.17**  | Relay                                        |
+| **1.18**  | Bluetooth LED Control                        |
+| **1.19**  | Bluetooth Home Automation + EEPROM + I2C LCD |
+
+---
+
+# Recommended Student Workflow
+
+Students only need to install the library once.
+
+### Step 1 — Install the Arduino UNO Board Package
+
+Arduino UNO uses the AVR Arduino core supplied through the Arduino IDE.
+
+Select:
+
+**Tools → Board → Arduino AVR Boards → Arduino Uno**
+
+### Step 2 — Install NIELIT Arduino UNO Practicals
+
+Open:
+
+**Tools → Manage Libraries**
+
+Search:
+
+```text
+NIELIT Arduino UNO Practicals
+```
+
+Click **Install**.
+
+### Step 3 — Install Practical Dependencies
+
+Some practicals require additional libraries.
+
+Install the required dependencies through:
+
+**Tools → Manage Libraries**
+
+### Step 4 — Open the Practical
 
 Go to:
 
-**File -> Examples -> NIELIT Arduino UNO Practicals**
+**File → Examples → NIELIT Arduino UNO Practicals**
 
-Then select the required practical.
+Select the required practical.
 
-## Included practicals
+### Step 5 — Check the Hardware Connections
 
-- Practical 1.2 - Basic LED Output
-- Practical 1.3 - LED Array
-- Practical 1.4 - LED PWM Fade
-- Practical 1.5 - Digital Button Input
-- Practical 1.6 - Button Controlled LED
-- Practical 1.7 - Two-Button LED Control
-- Practical 1.8 - Buzzer
-- Practical 1.9 - LED and Buzzer PWM
-- Practical 1.10 - 16x2 LCD
-- Practical 1.11 - 4x4 Keypad
-- Practical 1.12 - LCD + Keypad + Buzzer Access Control
-- Practical 1.13 - HC-SR04 Ultrasonic Distance
-- Practical 1.14 - DHT11 Telemetry
-- Practical 1.15 - DHT11 + I2C LCD
-- Practical 1.16 - Internal EEPROM
-- Practical 1.17 - Relay
-- Practical 1.18 - Bluetooth LED Control
-- Practical 1.19 - Bluetooth Home Automation + EEPROM + I2C LCD
+Follow the circuit and pin configuration specified in the practical.
 
-## Third-party dependencies
+### Step 6 — Select the Board and Port
 
-Some examples require external Arduino libraries. Install them from
-**Tools -> Manage Libraries...** before compiling the relevant practical.
+Select:
 
-Common dependencies include:
+* **Arduino Uno**
+* Correct COM/serial port
 
-- LiquidCrystal
-- Keypad
-- DHT sensor library
-- LiquidCrystal_I2C
-- SoftwareSerial (normally included with AVR Arduino core)
+### Step 7 — Verify and Upload
 
-## Notes
+Click **Verify** first.
 
-The practicals are distributed as Arduino Examples rather than forcing all
-practical implementations into one compiled library. This is the recommended
-Arduino structure for teaching material: students install one ZIP and then
-open each practical directly from the Examples menu.
+If compilation succeeds, click **Upload**.
 
-The library itself also exposes a small version API:
+---
+
+# Third-Party Dependencies
+
+Some practicals require additional Arduino libraries.
+
+Install them through:
+
+**Tools → Manage Libraries**
+
+| Practical | Dependency                                                    |
+| --------- | ------------------------------------------------------------- |
+| **1.10**  | LiquidCrystal / LiquidCrystal_I2C as specified by the example |
+| **1.11**  | Keypad                                                        |
+| **1.12**  | Keypad, LiquidCrystal / LiquidCrystal_I2C as specified        |
+| **1.14**  | DHT sensor library                                            |
+| **1.15**  | DHT sensor library, LiquidCrystal_I2C                         |
+| **1.18**  | SoftwareSerial / Bluetooth interface as specified             |
+| **1.19**  | SoftwareSerial, LiquidCrystal_I2C                             |
+
+> **Note:** `SoftwareSerial` is normally provided with the AVR Arduino core and does not generally need to be installed separately.
+
+Always refer to the individual practical before installing dependencies.
+
+---
+
+# Hardware
+
+The practical series uses common Arduino UNO laboratory components, including:
+
+* Arduino UNO
+* LEDs
+* Push buttons
+* Resistors
+* Buzzer
+* 16x2 LCD
+* I2C LCD
+* 4x4 keypad
+* HC-SR04 ultrasonic sensor
+* DHT11 temperature/humidity sensor
+* Relay module
+* HC-05 / HC-06 Bluetooth module
+* Jumper wires
+* Breadboard
+
+Refer to the individual practical for the exact components and wiring.
+
+---
+
+# GPIO / Pin Configuration
+
+The practicals use Arduino UNO digital and analog pins according to the individual circuit requirements.
+
+Always verify the pin definitions in the example before connecting hardware.
+
+For example:
+
+```cpp
+const int ledPin = 7;
+const int buttonPin = 11;
+```
+
+Do not assume that the same pin configuration applies to every practical.
+
+---
+
+# EEPROM
+
+Practical **1.16** introduces the Arduino UNO's internal EEPROM.
+
+Practical **1.19** extends this concept to a Bluetooth-controlled home automation system with persistent relay-state storage.
+
+EEPROM allows selected data to remain stored even after the Arduino is powered off or reset.
+
+Avoid unnecessary EEPROM writes in applications that repeatedly update the same address.
+
+---
+
+# Bluetooth
+
+Practicals **1.18** and **1.19** use a Bluetooth serial module such as:
+
+* HC-05
+* HC-06
+
+Typical applications include:
+
+* Wireless LED control
+* Relay control
+* Home automation
+* Serial command processing
+
+Check the practical-specific wiring before connecting the Bluetooth module.
+
+> **Important:** Verify voltage levels for the Bluetooth module's RX/TX interface. Do not blindly connect signals without checking the module's electrical requirements.
+
+---
+
+# Relay and Home Automation Safety
+
+Practical **1.17** and Practical **1.19** demonstrate relay-based control.
+
+The Arduino should control an appropriately rated **relay module or driver circuit**.
+
+Do not connect mains voltage directly to Arduino GPIO pins.
+
+For mains-powered loads:
+
+```text
+Arduino UNO
+     │
+     ▼
+Relay / Driver Module
+     │
+     ▼
+Electrical Load
+```
+
+Use appropriate isolation, protection, enclosure, wiring, and qualified supervision when working with mains electricity.
+
+---
+
+# DHT11 Sensor
+
+Practical **1.14** demonstrates temperature and humidity acquisition using a DHT11 sensor.
+
+Practical **1.15** extends the application by displaying sensor readings on an I2C LCD.
+
+Depending on the sensor/module being used, a pull-up resistor may be required on the data line.
+
+---
+
+# Ultrasonic Sensor
+
+Practical **1.13** uses the HC-SR04 ultrasonic sensor for distance measurement.
+
+Follow the practical-specific wiring carefully.
+
+For applications using hardware with voltage levels incompatible with Arduino GPIO, use an appropriate level-shifting interface.
+
+---
+
+# Library Usage
+
+This project is primarily an **educational practical library**.
+
+The practical programs are distributed as Arduino Examples rather than forcing all practical implementations into one compiled library.
+
+This allows students to open, study, modify, compile, and upload each practical independently.
+
+After installation:
+
+```text
+File
+ └── Examples
+      └── NIELIT Arduino UNO Practicals
+           ├── Practical_1_2
+           ├── Practical_1_3
+           ├── Practical_1_4
+           ├── ...
+           └── Practical_1_19
+```
+
+---
+
+# NIELIT Library API
+
+The package also exposes a small library API.
+
+Example:
 
 ```cpp
 #include <NIELIT_Arduino_UNO_Practicals.h>
 
 void setup() {
-  Serial.begin(9600);
-  Serial.println(NIELIT::UNO::version());
+    Serial.begin(9600);
+
+    Serial.println(NIELIT::UNO::version());
 }
 
-void loop() {}
+void loop() {
+}
 ```
+
+This API provides the library version and course-related utility functionality.
+
+---
+
+# Package Structure
+
+```text
+NIELIT_Arduino_UNO_Practicals/
+│
+├── library.properties
+├── keywords.txt
+├── README.md
+├── LICENSE
+│
+├── src/
+│   ├── NIELIT_Arduino_UNO_Practicals.h
+│   └── NIELIT_Arduino_UNO_Practicals.cpp
+│
+├── examples/
+│   ├── Practical_1_2/
+│   ├── Practical_1_3/
+│   ├── Practical_1_4/
+│   ├── Practical_1_5/
+│   ├── Practical_1_6/
+│   ├── Practical_1_7/
+│   ├── Practical_1_8/
+│   ├── Practical_1_9/
+│   ├── Practical_1_10/
+│   ├── Practical_1_11/
+│   ├── Practical_1_12/
+│   ├── Practical_1_13/
+│   ├── Practical_1_14/
+│   ├── Practical_1_15/
+│   ├── Practical_1_16/
+│   ├── Practical_1_17/
+│   ├── Practical_1_18/
+│   └── Practical_1_19/
+│
+└── extras/
+```
+
+---
+
+# Troubleshooting
+
+### Library does not appear in Arduino IDE
+
+Make sure you have:
+
+1. Installed the library through **Library Manager**.
+2. Restarted Arduino IDE.
+3. Searched for the exact library name:
+
+```text
+NIELIT Arduino UNO Practicals
+```
+
+Then check:
+
+**File → Examples**
+
+---
+
+### Compilation error: library not found
+
+For example:
+
+```text
+fatal error: DHT.h: No such file or directory
+```
+
+Install the corresponding dependency through:
+
+**Tools → Manage Libraries**
+
+Then compile the practical again.
+
+---
+
+### Arduino UNO not detected
+
+Check:
+
+* USB cable
+* COM/serial port
+* Board selection
+* USB driver where applicable
+
+Use:
+
+**Tools → Board → Arduino AVR Boards → Arduino Uno**
+
+---
+
+### Practical works in simulation but not on hardware
+
+Verify:
+
+* Pin numbers
+* GND connections
+* Component polarity
+* Resistor values
+* Power supply
+* Sensor wiring
+* Module voltage requirements
+
+---
+
+# Version
+
+Current release:
+
+```text
+v1.0.0
+```
+
+---
+
+# Educational Purpose
+
+This library is intended for educational, laboratory, and training purposes.
+
+It supports practical learning in:
+
+* Arduino Programming
+* Embedded Systems
+* Digital Electronics
+* Hardware Interfacing
+* Sensors
+* Actuators
+* PWM
+* Display Interfaces
+* EEPROM
+* Bluetooth Communication
+* Home Automation
+
+---
+
+# Author
+
+**Lovnish Verma**
+
+NIELIT / Embedded Systems & AI/IoT Training
+
+---
+
+# License
+
+This project is distributed under the license included in the repository.
+
+See:
+
+```text
+LICENSE
+```
+
+
+I would, however, add the missing `LICENSE` file before your next release, because that was the only documentation/metadata issue specifically flagged by Arduino Lint.
