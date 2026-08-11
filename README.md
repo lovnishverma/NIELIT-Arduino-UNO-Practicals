@@ -38,9 +38,9 @@ This is the recommended installation method.
 
 3. Search for:
 
-   ```text
+ ```text
    NIELIT Arduino UNO Practicals
-````
+```
 
 4. Select the library and click **Install**.
 
