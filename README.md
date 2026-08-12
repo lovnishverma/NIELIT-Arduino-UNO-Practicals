@@ -6,6 +6,10 @@ The library provides classroom-ready Arduino UNO practical programs covering GPI
 
 ---
 
+<img width="718" height="578" alt="Screenshot" src="https://github.com/user-attachments/assets/12c79667-26a8-4632-b167-5e24df027432" />
+
+
+
 ## Features
 
 - 18 complete Arduino UNO practical programs
