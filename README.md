@@ -341,11 +341,11 @@ After installation:
 File
  └── Examples
       └── NIELIT Arduino UNO Practicals
-           ├── Practical_1_2
-           ├── Practical_1_3
-           ├── Practical_1_4
+           ├── 1_2_Basic_LED_Output
+           ├── 1_3_LED_Array
+           ├── 1_4_LED_PWM_Fade
            ├── ...
-           └── Practical_1_19
+           └── 1_19_Bluetooth_Home_Automation_EEPROM_I2C_LCD
 ```
 
 ---
@@ -388,24 +388,24 @@ NIELIT_Arduino_UNO_Practicals/
 │   └── NIELIT_Arduino_UNO_Practicals.cpp
 │
 ├── examples/
-│   ├── Practical_1_2/
-│   ├── Practical_1_3/
-│   ├── Practical_1_4/
-│   ├── Practical_1_5/
-│   ├── Practical_1_6/
-│   ├── Practical_1_7/
-│   ├── Practical_1_8/
-│   ├── Practical_1_9/
-│   ├── Practical_1_10/
-│   ├── Practical_1_11/
-│   ├── Practical_1_12/
-│   ├── Practical_1_13/
-│   ├── Practical_1_14/
-│   ├── Practical_1_15/
-│   ├── Practical_1_16/
-│   ├── Practical_1_17/
-│   ├── Practical_1_18/
-│   └── Practical_1_19/
+│   ├── 1_2_Basic_LED_Output/
+│   ├── 1_3_LED_Array/
+│   ├── 1_4_LED_PWM_Fade/
+│   ├── 1_5_Digital_Button_Input/
+│   ├── 1_6_Button_Controlled_LED/
+│   ├── 1_7_Two_Button_LED_Control/
+│   ├── 1_8_Buzzer/
+│   ├── 1_9_LED_and_Buzzer_PWM/
+│   ├── 1_10_16x2_LCD/
+│   ├── 1_11_4x4_Keypad/
+│   ├── 1_12_LCD_Keypad_Buzzer_Access_Control/
+│   ├── 1_13_HC_SR04_Ultrasonic_Distance/
+│   ├── 1_14_DHT11_Telemetry/
+│   ├── 1_15_DHT11_I2C_LCD/
+│   ├── 1_16_Internal_EEPROM/
+│   ├── 1_17_Relay/
+│   ├── 1_18_Bluetooth_LED_Control/
+│   └── 1_19_Bluetooth_Home_Automation_EEPROM_I2C_LCD/
 │
 └── extras/
 ```
@@ -482,7 +482,7 @@ Verify:
 Current release:
 
 ```text
-v1.0.0
+v1.0.3
 ```
 
 ---

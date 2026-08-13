@@ -5,7 +5,7 @@ Arduino IDE:
 Sketch -> Include Library -> Add .ZIP Library...
 
 Choose:
-NIELIT_Arduino_UNO_Practicals_Library_v1.0.0.zip
+NIELIT_Arduino_UNO_Practicals_Library_v1.0.3.zip
 
 Then:
 File -> Examples -> NIELIT Arduino UNO Practicals
