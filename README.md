@@ -101,6 +101,29 @@ After installation, open:
 | **1.18**  | Bluetooth LED Control                        |
 | **1.19**  | Bluetooth Home Automation + EEPROM + I2C LCD |
 
+
+| Practical | Simulation Link(s) |
+|---|---
+| 1.1 Laboratory Safety, Tool Handling & Instrument Calibration | https://www.tinkercad.com/things/9JulLm4PUxr-rdo-led-power |
+| 1.2 Digital Output – Interfacing a Single LED | https://www.tinkercad.com/things/egMHbG0Dwl5-led-blinking |
+| 1.3 Array Structures – Interfacing Multiple LEDs | https://www.tinkercad.com/things/bUARFFkwWXJ-led-pattern |
+| 1.4 Analog Output Simulation – LED Fading via PWM | https://www.tinkercad.com/things/5RrwE5zdO2X-pwm-with-led |
+| 1.5 Digital Input – Push-Button Interfacing | https://www.tinkercad.com/things/ixWSHLo1QdM-push-button-interfacing |
+| 1.6 Input-Output Coupling – LED Control via Switch Logic | https://www.tinkercad.com/things/kO5menc2Pev-led-button-interfacing |
+| 1.7 Foundational Capstone – Multi-Switch Control | https://www.tinkercad.com/things/2xzqqbB4pdv-4leds-2-buttons |
+| 1.8 Frequency Generation – Piezoelectric Buzzer Interfacing | https://www.tinkercad.com/things/lk1jTQc7BeA-piezoelectric-buzzer-interfacing |
+| 1.9 Intermediate Capstone – High-Current Acoustic-Visual Indicator | https://www.tinkercad.com/things/k6jryo2aaLV-piezoelectric-buzzer-led-interfacing |
+| 1.10 Character Display – LCD Interfacing | https://www.tinkercad.com/things/9Qrg0005zZ9-lcd-interfacing |
+| 1.11 Matrix Keyboards – Keypad Interfacing & Serial Logging | https://www.tinkercad.com/things/a0OBZ3WDVSQ-matrix-keyboards-keypad-interfacing-amp-serial-logging |
+| 1.12 Sub-System Capstone – Integrated LCD-Buzzer-Keypad Access Control | https://www.tinkercad.com/things/lO18KCORf5w-integrated-lcd-buzzer-keypad-access-control |
+| 1.13 Time-of-Flight Calculus – Interfacing Ultrasonic Sensors | https://www.tinkercad.com/things/kC2uVszYSSa-ultrasonic-sensor |
+| 1.14 Environmental Telemetry – Interfacing DHT | https://www.tinkercad.com/things/8EZBzNslWfi-interfacing-dht-and-light-module |
+| 1.15 Environmental Monitoring Capstone – Intelligent Telemetry Terminal | https://www.tinkercad.com/things/lBTnwebvK57-intelligent-telemetry-terminal<br>https://wokwi.com/projects/471049364498828289 |
+| 1.16 Serial Bus Architectures – Interfacing I2C Internal EEPROM | *(no simulation link)* |
+| 1.17 High-Voltage Safety Segregation – Interfacing a Relay Module | https://www.tinkercad.com/things/3mGW49W5Bni-interfacing-relay-and-led |
+| 1.18 Wireless Serial Transceivers – Interfacing Bluetooth Modules | https://wokwi.com/projects/470149153762709505 |
+| 1.19 Comprehensive Capstone – Home Automation System (Smart Bluetooth) | https://wokwi.com/projects/470247005263111169 |
+
 ---
 
 # Recommended Student Workflow
