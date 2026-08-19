@@ -4,6 +4,9 @@ A structured Arduino library containing the **NIELIT Arduino UNO Practical Serie
 
 The library provides classroom-ready Arduino UNO practical programs covering GPIO, digital and analog interfacing, PWM, displays, sensors, EEPROM, Bluetooth, relay control, and home automation.
 
+<img width="940" height="788" alt="NIELIT Arduino UNO Practicals" src="https://github.com/user-attachments/assets/662b653f-201d-44c4-a214-4e1b1768b227" />
+
+
 ---
 
 <img width="718" height="578" alt="Screenshot" src="https://github.com/user-attachments/assets/12c79667-26a8-4632-b167-5e24df027432" />
